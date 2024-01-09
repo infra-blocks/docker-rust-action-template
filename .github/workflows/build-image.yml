@@ -43,7 +43,7 @@ jobs:
       - uses: jenseng/dynamic-uses@v1
         id: self-test
         with:
-          uses: docker://public.ecr.aws/infrastructure-blocks/docker-action-template:git-sha-${{ github.sha }}
+          uses: docker://public.ecr.aws/${{ github.repository }}:git-sha-${{ github.sha }}
           with: '{"input": "hello"}'
       - name: Show outputs
         run: |
