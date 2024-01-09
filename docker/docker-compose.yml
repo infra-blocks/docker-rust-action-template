@@ -1,0 +1,7 @@
+services:
+  action:
+    image: public.ecr.aws/infrastructure-blocks/docker-action-template:latest
+    build:
+      context: ../
+      dockerfile: docker/action/Dockerfile
+    container_name: docker-action-template
