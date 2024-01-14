@@ -5,7 +5,18 @@ A template repository for GitHub Actions hosted as docker images on registries.
 ## Instantiation checklist
 
 - Replace the summary and the action usage section in this document.
-- Replace the self-test section of the [build-image workflow](.github/workflows/build-image.yml).
+
+## Inputs
+
+|    Name       | Required | Description      |
+|:-------------:|:--------:|------------------|
+| example-input |  true    | A useless input. |
+
+## Outputs
+
+|     Name       | Description                    |
+|:--------------:|--------------------------------|
+| example-output | An equivalently useless output |
 
 ## Usage
 

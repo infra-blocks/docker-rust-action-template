@@ -44,7 +44,7 @@ jobs:
         id: self-test
         with:
           uses: docker://public.ecr.aws/${{ github.repository }}:git-sha-${{ github.sha }}
-          with: '{"input": "hello"}'
+          with: '{"example-input": "hello"}'
       - name: Show outputs
         run: |
-          echo "Example output: ${{ fromJson(steps.self-test.outputs.outputs).example-output }}"
+          printf ${{ toJson(steps.self-test.outputs.outputs) }} | jq
