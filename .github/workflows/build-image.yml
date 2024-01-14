@@ -47,4 +47,5 @@ jobs:
           with: '{"example-input": "hello"}'
       - name: Show outputs
         run: |
-          printf ${{ toJson(steps.self-test.outputs.outputs) }} | jq
+          # To respect nested stringified objects, we need to properly escape quotes.
+          echo -e ${{ toJson(steps.self-test.outputs.outputs) }}
