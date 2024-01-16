@@ -18,6 +18,12 @@ A template repository for GitHub Actions hosted as docker images on registries.
 |:--------------:|--------------------------------|
 | example-output | An equivalently useless output |
 
+## Permissions
+
+|     Scope     | Level | Reason   |
+|:-------------:|:-----:|----------|
+| pull-requests | read  | Because. |
+
 ## Usage
 
 ```yaml
