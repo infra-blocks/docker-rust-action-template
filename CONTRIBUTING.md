@@ -5,8 +5,8 @@
 ### Setup
 
 This project depends on the following tools:
-- [docker](https://github.com/tfutils/tfenv) as the `docker compose` backend
-- [docker compose](https://www.gnu.org/software/make/) to build/run/test the repository's image.
+- [docker](https://docs.docker.com/engine/install/) as the `docker compose` backend
+- [docker compose](https://docs.docker.com/compose/install/linux/) to build/run/test the repository's image.
 
 ### Release Flow
 
