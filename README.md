@@ -14,7 +14,7 @@ A template repository for GitHub Actions hosted as Docker images running Rust bi
 - Remove the [trigger update from template workflow](.github/workflows/trigger-update-from-template.yml)
 - Remove the `Trigger Update From Template` status badge
 - Uncomment the `Update From Template` status badge.
-- Replace the self-test section of the [build-image workflow](.github/workflows/build.yml)
+- Replace the self-test section of the [build workflow](.github/workflows/build.yml)
 - Replace the summary and the action usage section in this readme.
 - Prepare the [changelog](CHANGELOG.md) for the first version of the module that will be released.
 
