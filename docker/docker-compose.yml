@@ -1,6 +1,6 @@
 services:
   action:
-    image: public.ecr.aws/infrastructure-blocks/docker-rust-action-template:latest
+    image: public.ecr.aws/infra-blocks/docker-rust-action-template:latest
     build:
       context: ../
       dockerfile: docker/action/Dockerfile

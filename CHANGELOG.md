@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First release!
 
-[1.0.0]: https://github.com/infrastructure-blocks/docker-rust-action-template/releases/tag/v1.0.0
+[1.0.0]: https://github.com/infra-blocks/docker-rust-action-template/releases/tag/v1.0.0

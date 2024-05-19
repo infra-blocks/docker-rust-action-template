@@ -33,7 +33,7 @@ jobs:
           registry-type: public
       - name: Build, tag and publish docker image
         id: docker-publish
-        uses: infrastructure-blocks/docker-publish-action@v1
+        uses: infra-blocks/docker-publish-action@v1
         with:
           service: action
           tags: '["git-sha-${{ github.sha }}"]'
