@@ -1,10 +1,10 @@
 # docker-rust-action-template
-[![Build](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/build.yml/badge.svg)](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/build.yml)
-[![Release](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/release.yml/badge.svg)](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/release.yml)
-[![Git Tag](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/git-tag.yml/badge.svg)](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/git-tag.yml)
-[![Trigger Update From Template](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml/badge.svg)](https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml)
+[![Build](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/build.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/build.yml)
+[![Release](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml)
+[![Git Tag](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml)
+[![Trigger Update From Template](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml)
 
-[//]: # ([![Update From Template]&#40;https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml/badge.svg&#41;]&#40;https://github.com/infrastructure-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml&#41;)
+[//]: # ([![Update From Template]&#40;https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml/badge.svg&#41;]&#40;https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml&#41;)
 
 A template repository for GitHub Actions hosted as Docker images running Rust binaries.
 
@@ -57,5 +57,5 @@ jobs:
   example-job:
     runs-on: ubuntu-22.04
     steps:
-      - uses: docker://public.ecr.aws/infrastructure-blocks/docker-rust-action-template:v1
+      - uses: docker://public.ecr.aws/infra-blocks/docker-rust-action-template:v1
 ```
