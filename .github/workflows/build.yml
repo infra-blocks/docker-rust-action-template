@@ -13,8 +13,15 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - run: |
-          echo "Implement me"
+      - uses: actions/checkout@v4
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      # cargo-tarpaulin@0.30.0 breaks the build last time around.
+      - run: cargo install cargo-tarpaulin@0.29.2
+      - run: make lint
+      - run: make test.coverage.lcov
+      - uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.codecov-token }}
   build-image:
     runs-on: ubuntu-22.04
     permissions:
@@ -22,6 +29,11 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+      - id: variables
+        run: |
+          rust_version=$(grep channel rust-toolchain.toml | cut -d '=' -f2 | xargs)
+          
+          echo "rust-version=${rust_version}" >> "${GITHUB_OUTPUT}"
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ vars.AWS_ROLE }}
@@ -35,6 +47,7 @@ jobs:
         id: docker-publish
         uses: infra-blocks/docker-publish-action@v1
         with:
+          build-arguments: '{"RUST_VERSION": "${{ steps.variables.outputs.rust-version }}"}'
           service: action
           tags: '["git-sha-${{ github.sha }}"]'
       - name: Show published images

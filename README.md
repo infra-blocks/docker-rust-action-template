@@ -3,6 +3,7 @@
 [![Release](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml)
 [![Git Tag](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml)
 [![Trigger Update From Template](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml)
+[![codecov](https://codecov.io/gh/infra-blocks/docker-rust-action-template/graph/badge.svg?token=12LLJ39LVP)](https://codecov.io/gh/infra-blocks/docker-rust-action-template)
 
 [//]: # ([![Update From Template]&#40;https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml/badge.svg&#41;]&#40;https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/update-from-template.yml&#41;)
 
@@ -17,6 +18,7 @@ A template repository for GitHub Actions hosted as Docker images running Rust bi
 - Replace the self-test section of the [build workflow](.github/workflows/build.yml)
 - Replace the summary and the action usage section in this readme.
 - Prepare the [changelog](CHANGELOG.md) for the first version of the module that will be released.
+- Set up code coverage, overwrite the codecov badge with the specific link for your repository.
 
 ## Inputs
 

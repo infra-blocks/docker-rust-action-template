@@ -5,8 +5,14 @@
 ### Setup
 
 This project depends on the following tools:
-- [docker](https://docs.docker.com/engine/install/) as the `docker compose` backend
-- [docker compose](https://docs.docker.com/compose/install/) to build/run/test the repository's image.
+- [rustup](https://www.rust-lang.org/tools/install) to manage the Rust toolchain.
+- [docker](https://docs.docker.com/engine/install/) as the `docker compose` backend.
+- [docker compose](https://docs.docker.com/compose/install/linux/) to build/run/test the repository's image.
+
+### Release Flow
+
+This project's release cycle is fully automated. It leverages the [git-tag-from-semver-increment-workflow](https://github.com/infra-blocks/git-tag-from-semver-increment-workflow)
+to accomplish this. Refer to its documentation for usage information.
 
 ## Releasing
 
