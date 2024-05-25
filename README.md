@@ -1,7 +1,6 @@
 # docker-rust-action-template
 [![Build](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/build.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/build.yml)
 [![Release](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/release.yml)
-[![Git Tag](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/git-tag.yml)
 [![Trigger Update From Template](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml/badge.svg)](https://github.com/infra-blocks/docker-rust-action-template/actions/workflows/trigger-update-from-template.yml)
 [![codecov](https://codecov.io/gh/infra-blocks/docker-rust-action-template/graph/badge.svg?token=12LLJ39LVP)](https://codecov.io/gh/infra-blocks/docker-rust-action-template)
 
