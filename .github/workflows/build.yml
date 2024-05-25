@@ -21,7 +21,7 @@ jobs:
       - run: make test.coverage.lcov
       - uses: codecov/codecov-action@v4
         env:
-          CODECOV_TOKEN: ${{ secrets.codecov-token }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   build-image:
     runs-on: ubuntu-22.04
     permissions:
